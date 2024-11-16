@@ -1,4 +1,4 @@
-function UpdateClock() {
+function updateClock() {
     const now = new Date();
     const hours = String(now.getHours()).padStart(2, "0");
     const minutes = String(now.getMinutes()).padStart(2, "0");
@@ -6,4 +6,4 @@ function UpdateClock() {
     document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
 }
 
-setInterval(UpdateClock, 1000);
+setInterval(updateClock, 1000);
